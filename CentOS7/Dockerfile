@@ -1,6 +1,6 @@
 FROM centos
 MAINTAINER architect.bian
-LABEL name="centos7" license="GPLv2" build-date="20170221"
+LABEL name="centos7" license="MIT" build-date="20170221"
 
 ENV OPENSSL_VERSION OpenSSL_1_1_0e
 ENV ZLIB_VERSION 1.2.11
