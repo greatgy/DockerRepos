@@ -14,6 +14,7 @@ The default passwd is c90e2392f3f911e68d6a00ffd56dc7a0, you should mount your fi
 
 You can mount /data,/data[0-9] while run docker.
 
+  Demo:
  * [root@serverhost ~]# docker run -d -p 873:873 --restart=always -v /home/data0:/data0 -v /home/data1:/data1 --name rsync rsync
  * [root@testhost ~]# echo "c90e2392f3f911e68d6a00ffd56dc7a0" > /etc/rsync/forker.passwd
  * [root@testhost ~]# chmod 600 /etc/rsync/forker.passwd
