@@ -2,7 +2,7 @@
 docker images of centos7
 
 ## Supported Tags
-latest (https://github.com/greatbsky/DockerRepos/blob/master/centos7/Dockerfile)
+latest (https://github.com/greatbsky/DockerRepos/blob/master/CentOS7/Dockerfile)
 
 
 ## What's in this image?
