@@ -1,4 +1,4 @@
-# nginx-https
+# nginx
 docker images of nginx base on centos7
 
 ## Supported Tags
