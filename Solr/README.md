@@ -1,5 +1,5 @@
 # solr
-docker images of solr base on centos7
+docker images of solr base on openjdk
 
 ## Supported Tags
 latest
