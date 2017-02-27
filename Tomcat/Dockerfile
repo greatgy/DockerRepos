@@ -12,7 +12,6 @@ COPY server.xml $TOMCAT_PATH/conf/server.xml
 COPY context.xml $TOMCAT_PATH/conf/context.xml
 
 RUN chmod +x $TOMCAT_PATH/bin/catalina.sh
-RUN ln -sf /dev/stdout $TOMCAT_PATH/logs/catalina.out
 
 WORKDIR $TOMCAT_PATH
 
