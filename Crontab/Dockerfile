@@ -6,4 +6,4 @@ ENV VERSION 1.11-6
 
 RUN yum update -y && yum install -y crontabs && rm -rf /data/softs/*
 
-CMD ["/bin/bash"]
+CMD ["crond","-n"]
