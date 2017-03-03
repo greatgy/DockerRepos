@@ -14,3 +14,4 @@ MAILTO=root
 # *  *  *  *  * user-name  command to be executed
 0 2 1 * * root /data/env/shell/fullbackup.sh >> /data/env/shell/logs/fullbackup.log 2>&1
 0 3 * * * root /data/env/shell/incrbackup.sh >> /data/env/shell/logs/incrbackup.log 2>&1
+

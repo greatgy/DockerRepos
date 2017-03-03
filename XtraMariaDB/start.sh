@@ -13,3 +13,4 @@ mysqld --user=mysql
 DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
 echo "start finished at $DATATIME."
 echo ""
+
