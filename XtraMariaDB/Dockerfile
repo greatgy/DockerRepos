@@ -2,6 +2,7 @@ FROM greatbsky/crontab
 MAINTAINER architect.bian
 LABEL name="xtramariadb" license="MIT" build-date="20170303"
 
+ENV VERSION 1.0.0
 ENV XTRABACKUP_VERSION 2.4.6
 ENV MARIADB_VERSION 10.1.21
 
