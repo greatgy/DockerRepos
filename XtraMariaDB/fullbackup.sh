@@ -20,7 +20,7 @@ else
   mkdir -p $DPATH
   xtrabackup --user=backup --password=xtrapwd --backup --target-dir=$DPATH
   rm -rf $CURR
-  ln -s $DPATH CURR
+  ln -s $DPATH $CURR
   DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
   echo "finished full backup at $DATATIME."
 fi

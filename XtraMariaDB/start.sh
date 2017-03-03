@@ -6,7 +6,7 @@
 
 DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
 echo "begin to start at $DATATIME"
-/data/env/shell/startbackup.sh
+/data/env/shell/startbackup.sh &
 crond
 chown -R mysql:mysql /data/env/mariadb
 mysqld --user=mysql
