@@ -10,7 +10,7 @@ DAY=`date "+%d"`
 DPATH="/data/backup/mariadb/$MONTH/$DAY"
 CURR="/data/backup/mariadb/$MONTH/current"
 if [ -e "$DPATH" ]; then
-  echo "File: $DPATH exist."
+  echo "File: $DPATH exist. no need incremental backup."
 else
   DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
   echo "begin to incremental backup at $DATATIME."

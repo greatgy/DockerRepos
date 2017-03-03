@@ -9,7 +9,7 @@ BCKPATH=/data/backup/mariadb
 MPATH="$BCKPATH/$MONTH"
 
 if [ -e "$MPATH" ]; then
-  echo "File: $MPATH exist. not delete."
+  echo "File: $MPATH exist. not need delete."
 else
   DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
   echo "begin to delete backup before 2 months ago at $DATATIME."

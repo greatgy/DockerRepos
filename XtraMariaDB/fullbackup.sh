@@ -13,7 +13,7 @@ DPATH="/data/backup/mariadb/$MONTH/$DAY"
 MPATH="/data/backup/mariadb/$MONTH"
 CURR="$MPATH/current"
 if [ -e "$CURR" ]; then
-  echo "File: $CURR exist."
+  echo "File: $CURR exist. no need full backup."
 else
   DATATIME=`date "+%Y-%m-%d %H:%M:%S.%s"`
   echo "begin to full backup at $DATATIME."
