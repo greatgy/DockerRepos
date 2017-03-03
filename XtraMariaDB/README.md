@@ -1,5 +1,5 @@
 # xtramariadb
-docker images of xtramariadb base on greatbsky/crontab image
+docker images of xtrabackup & mariadb base on greatbsky/crontab image.
 
 ## Supported Tags
 latest
