@@ -8,4 +8,4 @@ RUN yum update -y && yum install -y openssh-server openssh-clients
 
 EXPOSE 22
 
-CMD /usr/sbin/sshd start && tail -f /var/log/messages
+CMD /usr/sbin/sshd start && tail -f /dev/null
