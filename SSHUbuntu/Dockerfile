@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install -y ssh
 
 EXPOSE 22
 
-CMD ["/etc/init.d/ssh", "start"]
+CMD /etc/init.d/ssh start & tail -f /dev/null
