@@ -6,4 +6,6 @@ ENV VERSION 1.0.0
 
 RUN yum update -y && yum install -y openssh-server openssh-clients
 
+EXPOSE 22
+
 CMD ["/usr/sbin/sshd", "start"]
