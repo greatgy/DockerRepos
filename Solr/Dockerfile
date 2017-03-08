@@ -2,7 +2,7 @@ FROM greatbsky/openjdk:latest
 MAINTAINER architect.bian
 LABEL name="solr" license="MIT" build-date="20170223"
 
-ENV VERSION 6.4.1
+ENV VERSION 5.5.4
 ENV SOLR_USER solr
 ENV SOLR_GROUP solr
 
