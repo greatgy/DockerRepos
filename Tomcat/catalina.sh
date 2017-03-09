@@ -351,6 +351,7 @@ if [ "$1" = "debug" ] ; then
 elif [ "$1" = "run" ]; then
 
   shift
+  touch "$CATALINA_OUT"
   if [ "$1" = "-security" ] ; then
     if [ $have_tty -eq 1 ]; then
       echo "Using Security Manager"
@@ -363,14 +364,16 @@ elif [ "$1" = "run" ]; then
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start
+      org.apache.catalina.startup.Bootstrap "$@" start \
+      >> "$CATALINA_OUT" 2>&1
   else
     eval exec "\"$_RUNJAVA\"" "\"$LOGGING_CONFIG\"" $LOGGING_MANAGER $JAVA_OPTS $CATALINA_OPTS \
       -classpath "\"$CLASSPATH\"" \
       -Dcatalina.base="\"$CATALINA_BASE\"" \
       -Dcatalina.home="\"$CATALINA_HOME\"" \
       -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
-      org.apache.catalina.startup.Bootstrap "$@" start
+      org.apache.catalina.startup.Bootstrap "$@" start \
+      >> "$CATALINA_OUT" 2>&1
   fi
 
 elif [ "$1" = "start" ] ; then
