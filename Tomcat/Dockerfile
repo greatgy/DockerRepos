@@ -1,6 +1,6 @@
 FROM greatbsky/openjdk:latest
-MAINTAINER architect.bian
-LABEL name="tomcat" license="MIT" build-date="20170223"
+MAINTAINER architect.bian LiuBin
+LABEL name="tomcat" license="MIT" build-date="20170621"
 
 ENV VERSION 8.5.15
 ENV TOMCAT_PATH /data/env/tomcats/0
