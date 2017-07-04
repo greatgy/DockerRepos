@@ -6,7 +6,7 @@ latest
 
 
 ## What's in this image?
-This image contains the version 8.5.11 of tomcat
+This image contains the version 8.5.15 of tomcat
 
 
 ## Usage
