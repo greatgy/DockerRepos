@@ -1,9 +1,9 @@
 FROM greatbsky/centos7:latest
-MAINTAINER architect.bian
-LABEL name="node.js" license="MIT" build-date="20170423"
+MAINTAINER architect.bian LiuBin
+LABEL name="node.js" license="MIT" build-date="20170808"
 
-ENV VERSION 6.10.2
+ENV VERSION 8.2.1
 
-RUN yum update -y && cd /data/softs && curl --silent --location https://rpm.nodesource.com/setup_6.x | bash - && yum install -y nodejs && npm install -g forever
+RUN yum update -y && cd /data/softs && curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - && yum install -y nodejs && npm install -g forever
 
 CMD ["node", "-v"]
