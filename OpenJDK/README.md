@@ -6,7 +6,7 @@ latest
 
 
 ## What's in this image?
-This image contains the version 1.8.0_121 of openjdk
+This image contains the version 1.8.0_161 of openjdk
 
 
 ## Supported Docker Versions
