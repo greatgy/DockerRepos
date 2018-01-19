@@ -1,5 +1,5 @@
 # OpenJDKX
-docker images of openjdk base on xtraos
+docker images of openjdk base on xtraos v1.4.0
 
 ## Supported Tags
 latest
