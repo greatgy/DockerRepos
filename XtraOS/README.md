@@ -1,5 +1,5 @@
 # XtraOS
-docker images of XtraOS base on centos7
+docker images of XtraOS base on centos7.4
 
 ## Supported Tags
 latest (https://github.com/greatbsky/DockerRepos/blob/master/XtraOS/Dockerfile)
