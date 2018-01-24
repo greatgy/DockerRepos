@@ -12,4 +12,4 @@ RUN yum update -y && cd /data/softs && wget "$FLUME_URL" && tar -zvxf apache-flu
 ADD flume.conf /data/env/flume/conf/flume.conf
 ADD startup.sh /usr/bin/startup
 
-ENTRYPOINT [ "startup" ]
+ENTRYPOINT [ "/usr/bin/startup" ]
