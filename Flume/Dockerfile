@@ -10,6 +10,7 @@ ENV PATH $PATH:$FLUME_HOME/bin:
 RUN yum update -y && cd /data/softs && wget "$FLUME_URL" && tar -zvxf apache-flume-$VERSION-bin.tar.gz && mv /data/softs/apache-flume-$VERSION-bin /data/env/flume && rm -rf /data/softs/* && (touch /var/log/log0 & touch /var/log/log1 & touch /var/log/log2 & touch /var/log/log3 & touch /var/log/log4 & touch /var/log/log5 & touch /var/log/log6 & touch /var/log/log7 & touch /var/log/log8 & touch /var/log/log9)
 
 ADD flume.conf /data/env/flume/conf/flume.conf
-ADD startup.sh /usr/bin/startup
+ADD startup.sh /usr/bin/startup.sh
+
 
 ENTRYPOINT [ "/usr/bin/startup" ]
