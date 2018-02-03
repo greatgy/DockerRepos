@@ -1,4 +1,4 @@
-FROM centos7:latest
+FROM greatbsky/centos7:latest
 MAINTAINER architect.bian
 LABEL name="golang" license="MIT" build-date="20180203"
 
