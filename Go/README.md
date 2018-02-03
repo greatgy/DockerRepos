@@ -1,12 +1,13 @@
-# go
+# golang
 docker images of go base on centos7
 
 ## Supported Tags
 latest
+v1.9.3
 
 
 ## What's in this image?
-This image contains the version 1.8.0 of go
+This image contains the version 1.9.3 of golang
 
 
 ## Supported Docker Versions
