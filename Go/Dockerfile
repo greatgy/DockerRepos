@@ -7,6 +7,6 @@ ENV GOROOT /data/env/go
 ENV GOPATH /data/env/go/repository
 ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
-RUN yum update -y && cd /data/softs && wget https://dl.google.com/go/go$VERSION.linux-amd64.tar.gz && tar -zvxf go$VERSION.linux-amd64.tar.gz && mv go /data/env/go
+RUN yum update -y && cd /data/softs && wget https://dl.google.com/go/go$VERSION.linux-amd64.tar.gz && tar -zvxf go$VERSION.linux-amd64.tar.gz && mv go /data/env/go &&  rm -rf /data/softs/*
 
 CMD ["go", "version"]
