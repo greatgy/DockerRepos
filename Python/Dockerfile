@@ -1,4 +1,4 @@
-FROM grandgeniusgroup/centos7:latest
+FROM greatbsky/centos7:latest
 MAINTAINER greatgy
 LABEL name="python" license="MIT" build-date="20180823"
 
